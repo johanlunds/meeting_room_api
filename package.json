@@ -1,0 +1,15 @@
+{
+  "name": "calendar_api",
+  "version": "0.0.0",
+  "description": "Web REST API to get calendar events and change them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johanlunds/meeting_room_api.git"
+  },
+  "author": "Johan Lundström",
+  "license": "BSD"
+}
