@@ -56,15 +56,14 @@ if (!module.parent) {
     .discover('calendar', 'v3')
     .execute(function(err, client) {
 
-    var oauth2Client =
-      new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
+      var oauth2Client =
+        new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
 
-    // retrieve an access token
-    getAccessToken(oauth2Client, function() {
-      // retrieve user profile
-      getUserProfile(
-        client, oauth2Client, 'me', printUserProfile);
-    });
-
+      // retrieve an access token
+      getAccessToken(oauth2Client, function() {
+        // retrieve user profile
+        getUserProfile(
+          client, oauth2Client, 'me', printUserProfile);
+      });
   });
 }

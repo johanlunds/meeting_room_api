@@ -1,16 +1,32 @@
 var coffee = require('iced-coffee-script');
 var express = require('express');
-var CalendarController = require('./app/controllers/calendar_controller');
+var googleapis = require('googleapis');
+var EventsController = require('./app/controllers/events_controller');
 
 var app = express();
 
 app.use(express.logger());
 
-app.get('/calendar', function(req, res){
-  new CalendarController().get(req, res);
+// TODO: restrict access to OUR API with api keys. see Express examples.
+
+app.get('/events', function(req, res){
+  new EventsController().get(req, res);
 });
 
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+
+function startApp() {
+  var port = process.env.PORT || 3000;
+  app.listen(port, function() {
+    console.log("Listening on " + port);
+  });
+}
+
+// PRepare some things before app can start
+googleapis
+  .discover('calendar', 'v3')
+  .execute(function(err, client) {
+
+    EventsController.googleClient = client;
+
+    startApp();
 });
