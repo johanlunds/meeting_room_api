@@ -1,6 +1,6 @@
 
 class CalendarController
-  helloWorld: (req, res) ->
+  get: (req, res) ->
     res.send JSON.stringify({helloWorld: 'hopp'})
 
 
