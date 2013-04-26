@@ -1,11 +1,12 @@
+var coffee = require('iced-coffee-script');
 var express = require('express');
-//var Point = require('./app/helloworld');
+var CalendarController = require('./app/controllers/calendar_controller');
 var app = express();
 
 app.use(express.logger());
 
 app.get('/hello.txt', function(req, res){
-  res.send('Hello World');
+  new CalendarController().helloWorld(req, res);
 });
 
 var port = process.env.PORT || 3000;
