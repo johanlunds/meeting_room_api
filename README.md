@@ -11,5 +11,18 @@ App expects these ENV-variables:
 * GOOGLE_OAUTH_CLIENT_ID
 * GOOGLE_OAUTH_CLIENT_SECRET
 * GOOGLE_OAUTH_REDIRECT_URL
-* GOOGLE_ACCESS_TOKEN
+* GOOGLE_OAUTH_ACCESS_TOKEN
 * GOOGLE_CALENDAR_ID
+
+Resources:
+
+* Google Calendar API doc: https://developers.google.com/google-apps/calendar/
+* Google API Console
+* https://github.com/visionmedia/express/blob/master/examples/web-service/index.js
+* https://github.com/visionmedia/express/tree/master/examples/mvc
+* https://github.com/visionmedia/express/tree/master/examples/params
+* https://github.com/visionmedia/express/tree/master/examples/resource
+* https://github.com/visionmedia/express/tree/master/examples/route-map
+* https://github.com/visionmedia/express/tree/master/examples/route-middleware
+* https://github.com/visionmedia/express/tree/master/examples/route-separation
+* Heroku Mongoose: https://devcenter.heroku.com/articles/nodejs-mongoose
