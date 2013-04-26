@@ -10,6 +10,7 @@ app.use(express.logger());
 // TODO: restrict access to OUR API with api keys. see Express examples.
 
 app.get('/events', function(req, res){
+  res.setHeader('Access-Control-Allow-Origin', '*');
   new EventsController().get(req, res);
 });
 
