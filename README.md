@@ -26,3 +26,10 @@ Resources:
 * https://github.com/visionmedia/express/tree/master/examples/route-middleware
 * https://github.com/visionmedia/express/tree/master/examples/route-separation
 * Heroku Mongoose: https://devcenter.heroku.com/articles/nodejs-mongoose
+
+Stuff to look into:
+
+* Grunt or Cake
+* Yeoman
+* Mocha (compare to Jasmine?). Martin: Karma for Angular.js
+* Martin: Bower or Component?
