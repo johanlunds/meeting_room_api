@@ -2,7 +2,8 @@
   "name": "calendar_api",
   "version": "0.0.0",
   "description": "Web REST API to get calendar events and change them.",
-  "main": "index.js",
+  "private": true,
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,15 @@
     "url": "git@github.com:johanlunds/meeting_room_api.git"
   },
   "author": "Johan Lundström",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "express": "3.2.0",
+    "typescript": "*",
+    "coffee-script": "*",
+    "node-google-api": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
 }
