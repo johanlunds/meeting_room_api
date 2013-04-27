@@ -33,3 +33,6 @@ Stuff to look into:
 * Yeoman
 * Mocha (compare to Jasmine?). Martin: Karma for Angular.js
 * Martin: Bower or Component?
+* Martin: http://mgcrea.github.io/angular-strap/
+* Martin: http://jasny.github.io/bootstrap/
+* Martin: Twitter Bootstrap themes. Inspiration: http://expo.getbootstrap.com/
